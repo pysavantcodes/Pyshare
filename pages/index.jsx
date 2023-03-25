@@ -19,7 +19,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const socketIo = io(process.env.SERVER_LINK);
+    const socketIo = io("https://just-cyan-peacock.glitch.me");
     setUserId(socketIo.id);
     setSocket(socketIo);
   }, []);
