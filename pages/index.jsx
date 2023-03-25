@@ -30,12 +30,7 @@ export default function Home() {
       setAllRooms(args);
     });
   }, [socket]);
-
-  // socket?.on("receiveImage", (data) => {
-  //   console.log(messages);
-  //   setMessages([...messages, data]);
-  // });
-
+  
   const leaveRoom = () => {
     setName("");
     setRoomId("");
