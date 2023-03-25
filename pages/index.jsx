@@ -19,7 +19,7 @@ export default function Home() {
   });
 
   useEffect(() => {
-    const socketIo = io(process.env.API_LINK);
+    const socketIo = io(process.env.SERVER_LINK);
     setUserId(socketIo.id);
     setSocket(socketIo);
   }, []);
